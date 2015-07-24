@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+.left{
+  float: left;
+}
+.clr{
+  clear: both;
+}
+#addworldclockdisplay{
+  margin: 0 0px;
+  position: relative;
+}
+header {
+  background: #333;
+  color: white; 
+  font-size: 2rem;
+  line-height: 2.6rem;
+  text-align: center;
+  padding: 5px 5px;
+  margin: 0 0 10px;
+}
+.header-button{
+  cursor: pointer;
+  border: solid 2px #777;
+  border-radius: 5px;
+}
+
+ul#addClockUl {
+  list-style-type: none;
+}
+
+li > * {
+  display: block;
+  margin: 0px 30;
+}
+li > input, select{
+  width: 100%;
+  border: 0.1rem solid rgb(166, 166, 166);
+  box-sizing:border-box;
+  -ms-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box; 
+}

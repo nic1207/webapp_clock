@@ -1,0 +1,170 @@
+
+#timer {
+  width: 90%;
+  height: 90%;
+  margin: 0;
+  position: fixed;
+  top: 5%;
+  left: 5%;
+}
+#timerDiv {
+  /*background: brown;*/
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+#timerCanvas {
+  background-image: url(../images/timer/Clock2-30.png);  
+  background-size: contain; 
+  background-repeat: no-repeat;
+
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  z-index: 2;
+}
+
+div#beltDiv {
+  width: auto;
+  height: auto;
+  display: inline-block;
+  
+  position: absolute;
+  left: 390px;
+  top: 310px;
+  z-index: 1;
+  overflow: hidden;
+}
+
+span#belt {
+  background-image: url(../images/timer/Clock2-32.png);  
+  background-size: 855px 117px; 
+  background-repeat: no-repeat;
+  /*background-position: right center;*/
+  display: inline-block;
+  width: 855px;
+  height: 117px;
+
+  position: relative;
+  left: -630px; /*-630px, 0px*/
+  cursor: e-resize;
+}
+
+#t_digitPanel {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 120px;
+  right: 1%;
+  width: 50%;
+  pointer-events:none;
+  -webkit-user-select: none;    
+  -moz-user-select:none;
+  -ms-user-select: none;
+}
+
+#arrow {
+  position: absolute;
+  top: 20px;
+  right: 675px;
+  pointer-events:none;
+}
+
+#buttonSpan {
+  position: fixed;
+  top: 88%;
+  left: 80px;
+  cursor: pointer;
+}
+.t_hour, .t_minute, .t_second {
+  width: 50px;
+  height: 100px;
+}
+/********Popup Layer Style*********/
+.TimerEditPopupLayer{
+  z-index: -10;
+  top: 2%;
+  width:780px;
+  height:94%;
+  position:fixed;
+  left:15%;
+  /*margin-left:-300px;*/
+  background:#dcdcd2;
+  background-clip:padding-box;
+  border-radius:10px;
+  border:10px solid #666;
+  border:15px solid rgba(0,0,0,0.2);
+  opacity:0.1;
+  overflow:auto;
+  -webkit-overflow-scrolling: touch;
+
+  font-family: helvetica,Arial,sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+.timer-head  { 
+  position:relative;
+  width:796px;
+  height:80px;
+  top:-8px; 
+  left:-16px;
+  background-image:url('../images/timer/Clock2-64.png'); 
+  font-size:30px;
+}
+.timer-head-word { 
+  text-align:center; 
+  margin:0; 
+  padding:25px 0 0 0; 
+}
+.timer-setting-left-title {
+  width: 212px;
+  font-size: 26px;
+  display: inline-block;
+  text-align: left;
+  height: 52px;
+}
+.timer-setting-input {
+  width: 280px;
+  font-size: 26px;
+  display: inline-block;
+  text-align: left;
+}
+.timer-sound {
+  width: 233px;
+  height: 45px;
+  background: url("../images/timer/sound_select.png") no-repeat;
+  border-radius: 10px;
+}
+.timer-sound select {
+  background: transparent;
+  width: 233px;
+  padding: 6px;
+  border: 1px solid #CCC;
+  font-size: 22px;
+  height: 45px;
+  outline:0px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  /*appearance: none;*/
+  border-radius: 10px;
+}
+.timer-sound option {
+  background: white;
+  width: 233px;
+  padding: 5px;
+  font-size: 22px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  /*appearance: none;*/
+}
+.timer-right-info {
+  width: 190px;
+  text-align: left;
+  display: inline-block;
+  font-size: 26px;
+}
+#timerSave {
+  cursor: pointer;
+}
+/********Popup Layer Style*********/

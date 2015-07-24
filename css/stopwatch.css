@@ -1,0 +1,153 @@
+.inline {
+  float: left;
+}
+.clear {
+  clear: both;
+}
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
+
+
+#main {
+  position: absolute;
+  /*background: green;*/
+  left: 5%;
+  top: 5%;
+  width: 90%;
+  height: 90%;
+  display: block;
+  margin: 0;
+}
+
+#watchDiv {
+  /*-webkit-flex: 75%;
+  flex: 75%;*/
+  margin-top: 20px;
+  width: 60%;
+  
+  /*display: -webkit-box;*/
+  /* display: -moz-box;
+  display: -webkit-flex;
+  display: flex;*/
+  /*
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -webkit-justify-content: center;
+  */
+  /*justify-content: center;*/
+  /*
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -webkit-align-items: center;
+  */
+  /*align-items: center;*/
+  /*
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -webkit-flex-direction: column;
+  */
+  /*flex-direction: column;*/
+}
+#recordDiv {
+  /*background: pink;*/
+  width: 25%;
+  height: 90%;
+  margin: 0;
+  padding: 0;
+}
+#swbuttonDiv {
+  width: 15%;
+  
+  padding-top: 18em;
+  
+  /*display: -webkit-box;*/
+  /*display: -moz-box;*/
+  /*display: -webkit-flex;*/
+  /*display: flex;*/
+  /*
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -webkit-justify-content: center;
+  */
+  /*justify-content: center;*/
+  /*
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -webkit-align-items: center;
+  */
+  /*align-items: center;*/
+}
+
+#watchDiv canvas{
+  /*border: dashed 3px greenyellow;*/
+  background-image: url(../images/stopwatch/Clock2-16.png);  
+  background-size: contain; 
+  background-repeat: no-repeat;
+}
+
+#buttonPanel {
+  /*border: dashed 3px greenyellow;*/
+  background: url(../images/stopwatch/Clock2-18.png) no-repeat;
+  background-size: contain;
+  margin: auto;
+}
+
+#buttonPanel img {
+  max-width: 85%;
+  cursor: pointer;
+}
+
+#recordList {
+  /*background: blue;*/
+  overflow: auto;
+  width: 100%;
+  height: 100%;
+  -webkit-user-select: none;
+  -moz-user-select:none;
+  -ms-user-select: none; 
+  -webkit-overflow-scrolling: touch;
+}
+#recordList li {
+  list-style-type: none;
+  width: 90%;
+  border-bottom: solid 1px white;
+  text-align: right;
+  color: white;
+  font-size: 1.8em;
+}
+
+#recordDiv li:nth-child(2n) {
+  font-weight: bold;
+}
+
+li label.number {
+  float: left;
+}
+
+#nutDiv {
+  /*border: dashed 3px greenyellow;*/
+}
+
+#sideNut {
+  position: relative;
+  top: 88px;
+  right: 98px;
+  cursor: pointer;
+}
+
+#headNut {
+  position: relative;
+  top: 46px;
+  right: 26px;
+  cursor: pointer;
+}
+
+#digitPanel {
+ margin: 0;
+}

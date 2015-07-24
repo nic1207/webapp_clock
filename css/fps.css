@@ -1,0 +1,9 @@
+#FPSDiv{
+  /*border:1px #222 solid;*/
+  position:fixed;
+  top:0px;
+  right:0px;
+}
+#FPSCanvas{
+  border:1px pink solid;
+}

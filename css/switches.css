@@ -1,0 +1,180 @@
+/* ----------------------------------
+ * CHECKBOXES / RADIOS
+ * ---------------------------------- */
+.toolswitch {
+  /*background-color: green;*/
+  right: 5.5%;
+  top: 88%;
+  width:50%;
+  position: fixed;
+  float: right;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  /*pointer-events:none;*/
+}
+.tsswitch {
+  /*background-color: blue;*/
+  float: right;
+  width: 80px;
+}
+.onoffswitch {
+  /*background-color: yellow;*/
+  float: right;
+  position:relative;
+  width: 100px;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+  display: none;
+}
+.onoffswitch-label {
+  height: 60px;
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 60px;
+}
+.onoffswitch-inner {
+  width: 200%;
+  height: 60px;
+  margin-left: -100%;
+/*  
+  -moz-transition: margin 0.3s linear 0s;
+  -webkit-transition: margin 0.3s linear 0s;
+  -o-transition: margin 0.3s linear 0s;
+  transition: margin 0.3s linear 0s;
+*/
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+  float: left; width: 50%; height: 60px;padding: 0;
+  background: #f7b400 url(switch/Clock2-21.png) no-repeat center center;
+  background-size: 100% 100%;
+  font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+  content: "";
+  padding-left: 0px;
+}
+.onoffswitch-inner:after {
+  content: "";
+  padding-right: 0px;
+}
+.onoffswitch-switch {
+  width: 60px; margin: 0px;
+  height:60px;
+  background-image: url(switch/Clock2-28.png);
+  background-size: 100% 100%;
+  position: absolute; top: 0; bottom: 0; right: 40%;
+  /*
+  -moz-transition: all 0.3s linear 0s;
+  -webkit-transition: all 0.3s linear 0s;
+  -o-transition: all 0.3s linear 0s;
+  transition: all 0.3s linear 0s; 
+  */
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+  margin-left: 0px;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+  right: 0px;
+  background-image: url(switch/Clock2-27.png);
+  background-size: 100% 100%;
+}
+/* ----------------------------------------  */
+.chkbox {
+  display:none;
+}
+.chkbox + label {
+  background:url('../images/Clock2-56.png') no-repeat center center;
+  background-size: 100% 100%;
+  display:block;
+  height: 60px;
+  width: 60px;
+  padding: 0 0 0 0;
+  cursor: pointer;
+}
+ 
+.chkbox:checked + label {
+  background:url('../images/Clock2-57.png') no-repeat center center;
+  background-size: 100% 100%;
+  display:block;
+  height: 60px;
+  width: 60px;
+  padding: 0 0 0 0;
+  cursor: pointer;
+}
+/* -----------------------------------------------------------------------------------------------------------------------*/
+.onoffswitchsmall {
+  position:relative;
+  left: 90px;
+  top:140px;
+  width: 60px;
+  height: 30px;
+  
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select: none;
+}
+.onoffswitchsmall-checkbox {
+  display: none;
+}
+.onoffswitchsmall-label {
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 30px;
+}
+.onoffswitchsmall-inner {
+  width: 200%;
+  height: 30px;
+  margin-left: -100%;
+  /*
+  -moz-transition: margin 0.3s linear 0s;
+  -webkit-transition: margin 0.3s linear 0s;
+  -o-transition: margin 0.3s linear 0s;
+  transition: margin 0.3s linear 0s;
+  */
+}
+.onoffswitchsmall-inner:before, .onoffswitchsmall-inner:after {
+  float: left; width: 50%; height: 30px;padding: 0;
+  font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.onoffswitchsmall-inner:before {
+  content: "";
+  padding-left: 0px;
+  background: #f7b400 url(switch/Clock2-54.png) no-repeat center center;
+  background-size: 100% 100%;
+}
+.onoffswitchsmall-inner:after {
+  content: "";
+  padding-right: 0px;
+  background: #aaaaaa;
+}
+.onoffswitchsmall-switch {
+  width: 30px; margin: 0px;
+  height:30px;
+  background-image: url(switch/Clock2-55.png);
+  background-size: 100% 100%;
+  position: absolute; top: 0; bottom: 0; right: 50%;
+  /*
+  -moz-transition: all 0.3s linear 0s;
+  -webkit-transition: all 0.3s linear 0s;
+  -o-transition: all 0.3s linear 0s;
+  transition: all 0.3s linear 0s;
+  */
+}
+.onoffswitchsmall-checkbox:checked + .onoffswitchsmall-label .onoffswitchsmall-inner {
+  margin-left: 0px;
+}
+.onoffswitchsmall-checkbox:checked + .onoffswitchsmall-label .onoffswitchsmall-switch {
+  right: 0px;
+  background-image: url(switch/Clock2-55.png);
+  background-size: 100% 100%;
+}

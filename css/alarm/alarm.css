@@ -1,0 +1,198 @@
+ul, ol {
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  list-style: none;
+}
+
+#AlarmEditBotton{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.AlarmEditPopupLayer{
+  z-index: -10;
+  top: 2%;
+  width:780px;
+  height:90%;
+  position:fixed;
+  left:15%;
+  /*margin-left:-300px;*/
+  background:#dcdcd2;
+  background-clip:padding-box;
+  border-radius:10px;
+  border:10px solid #666;
+  border:15px solid rgba(0,0,0,0.2);
+  opacity:0.1;
+  overflow:auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.alarm-head  { 
+  position:relative;
+  width:796px;
+  height:80px;
+  top:-8px; 
+  left:-16px;
+  background-image:url('../../images/icons/Clock2-64.png'); 
+  font-size:30px;
+}
+
+.alarm-head-word { 
+  text-align:center; 
+  margin:0; 
+  padding:25px 0 0 0; 
+}
+
+.alarm-setting-left-title {
+  width: 212px;
+  font-size: 26px;
+  display: inline-block;
+  text-align: left;
+  height: 52px;
+}
+
+.alarm-setting-input {
+  width: 240px;
+  font-size: 26px;
+  display: inline-block;
+  text-align: left;
+}
+
+.alarm-right-info {
+  width: 190px;
+  text-align: left;
+  display: inline-block;
+  font-size: 26px;
+}
+
+.alarm-repeat input {
+  display: none;
+}
+
+.alarm-repeat span {
+  margin-left: -10px;
+  font-size: 18px;
+  width: 58px;
+  height: 60px;
+  display: inline-block;
+  background: url("../../images/icons/Clock2-59.png") no-repeat;
+  text-align: center;
+  vertical-align:middle;
+  line-height:54px;
+}
+
+.alarm-repeat input:checked + span {
+  background: url("../../images/icons/Clock2-60.png") no-repeat;
+}
+
+.alarm-sound {
+  width: 233px;
+  height: 45px;
+  background: url("../../images/alarm/sound_select.png") no-repeat;
+  border-radius: 10px;
+}
+
+.alarm-sound select {
+  background: transparent;
+  width: 233px;
+  padding: 6px;
+  border: 1px solid #CCC;
+  font-size: 22px;
+  height: 45px;
+  outline:0px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 10px;
+}
+
+.alarm-sound option {
+  background: white;
+  width: 233px;
+  padding: 5px;
+  font-size: 22px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.onoffswitchsnooze {
+  position: absolute;
+  left: 630px;
+  top: 270px;
+  width: 90px;
+  height: 50px;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select: none;
+}
+
+.onoffswitchsnooze-checkbox {
+  display: none;
+}
+
+.onoffswitchsnooze-label {
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 30px;
+}
+
+.onoffswitchsnooze-inner {
+  width: 200%;
+  height: 50px;
+  margin-left: -100%;
+  -moz-transition: margin 0.3s linear 0s;  
+  -webkit-transition: margin 0.3s linear 0s;
+  -o-transition: margin 0.3s linear 0s;
+  transition: margin 0.3s linear 0s;
+}
+
+.onoffswitchsnooze-inner:before, .onoffswitchsnooze-inner:after {
+  float: left; width: 50%; height: 50px;padding: 0;
+  font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.onoffswitchsnooze-inner:before {
+  content: "";
+  padding-left: 0px;
+  background: #f7b400 url(../switch/Clock2-54.png) no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.onoffswitchsnooze-inner:after {
+  content: "";
+  padding-right: 0px;
+  background: #aaaaaa;
+}
+
+.onoffswitchsnooze-switch {
+  width: 50px; margin: 0px;
+  height:50px;
+  background-image: url(../switch/Clock2-55.png);
+  background-size: 100% 100%;
+  position: absolute; top: 0; bottom: 0; right: 50%;
+
+  -moz-transition: all 0.3s linear 0s;
+  -webkit-transition: all 0.3s linear 0s;
+  -o-transition: all 0.3s linear 0s;
+  transition: all 0.3s linear 0s;
+}
+
+.onoffswitchsnooze-checkbox:checked + .onoffswitchsnooze-label .onoffswitchsnooze-inner {
+  margin-left: 0px;
+}
+
+.onoffswitchsnooze-checkbox:checked + .onoffswitchsnooze-label .onoffswitchsnooze-switch {
+  right: 0px;
+  background-image: url(../switch/Clock2-55.png);
+  background-size: 100% 100%;
+}
+
+
+

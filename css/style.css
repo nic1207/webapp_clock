@@ -1,0 +1,331 @@
+body {
+  background-color: gray;
+  font-family: helvetica, Arial, sans-serif;
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  font-size: 18px;
+  
+  -webkit-user-select: none;
+  -moz-user-select:none;   
+  -ms-user-select: none;
+  
+}
+body.hidden #alarm-view {
+  -moz-transform: none;
+  -moz-transition: none;
+  -webkit-transform: none;
+  -webkit-transition: none;
+}
+
+.ui-autocomplete {
+  max-height: 300px;
+  overflow-y: auto;
+  overflow-x: hidden;/* prevent horizontal scrollbar */
+}
+
+#viewArea {
+  width:90%; 
+  height:90%;
+  background: center center;
+  background-size: 100% 100%;
+  margin:1px auto;
+  padding: 25px 50px;
+  left: 0px;
+  top: 0px;
+  position: relative;
+}
+
+#view1 {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+#view2 {
+  position: fixed;
+  width: 100%; 
+  height: 100%;
+  left: -100%;
+  top: 0;
+}
+#view3 {
+  position: fixed;
+  width: 100%; 
+  height: 100%;
+  left: 100%;
+  top: 0;
+}
+
+
+#worldclock {
+  background: center center;
+  background-size: 100% 100%;
+  position: absolute;
+  /*position:relative;*/
+  width: 50%; 
+  height:40%;
+  left:45%;
+  top: 5%;
+}
+
+#alarm {
+  background: center center;
+  background-size: 100% 100%;
+  position: absolute;
+  /*position:relative;*/
+  width: 50%;
+  height:40%;
+  left:45%;
+  top: 45%;
+}
+
+.worldclockdisplay-mobile {
+  background: center center;
+  background-size: 100% 100%;
+  width: 100%; 
+  text-align:center;
+  margin:1px auto;
+  overflow: auto;
+}
+
+.worldclockdisplay-tablet {
+  background: center center;
+  background-image: url('../images/map01.png');
+  background-size: 100% 100%;
+  font-size: 16px;
+  width: 100%; 
+  height: 100%;
+  text-align:center;
+  margin:0px auto;
+  overflow: auto;
+  color: white;
+  -webkit-user-select: none;
+  -moz-user-select:none;
+  -ms-user-select: none;
+}
+
+
+#addworldclockdisplay {
+  background: gray center center;
+  background-size: 100% 100%;
+  position: fixed;
+  width: 100%; 
+  height: 100%;
+  text-align:center;
+  margin:0px auto;
+}
+
+#clock {
+  /*position: fixed;*/
+  position: relative;
+  width: 45%;
+  height: 100%;
+  background-size: 100% 100%;
+  left: 0px;
+  top: 0px;
+}
+
+.line01 {
+width:100%;
+height:15px;
+pointer-events:none;
+background: -moz-linear-gradient(top,  rgba(0,0,0,0.95) 0%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.95)), color-stop(100%,rgba(0,0,0,0))); 
+background: -webkit-linear-gradient(top,  rgba(0,0,0,0.95) 0%,rgba(0,0,0,0) 100%); 
+background: -o-linear-gradient(top,  rgba(0,0,0,0.95) 0%,rgba(0,0,0,0) 100%); 
+background: -ms-linear-gradient(top,  rgba(0,0,0,0.95) 0%,rgba(0,0,0,0) 100%);
+background: linear-gradient(to bottom,  rgba(0,0,0,0.95) 0%,rgba(0,0,0,0) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 );
+}
+.line02 {
+width:100%;
+height:15px;
+}
+
+#clockdisplay{ 
+  width: 100%; 
+  height: 100%;
+}
+
+.alarmdisplay-mobile {  
+  background-size: 100% 100%;
+  position: fixed;
+  width: 100%; 
+  height: 100%;
+}
+.alarmdisplay-tablet{
+  background-size: 100% 100%;
+}
+
+#addalarmdisplay {  
+  background: gray  center center;
+  background-size: 100% 100%;
+  position: fixed;
+  width: 100%; 
+  height: 100%;
+}
+
+#stopwatch {  
+  background-size: green 100% 100%;
+  width: 100%; 
+  overflow: auto;
+  /*
+  height: -moz-calc(100% - 6.5rem);
+  height: -webkit-calc(100% - 6.5rem);
+  */
+}
+ 
+#timerdisplay {  
+  background-size: 100% 100%;
+  /*position: fixed;*/
+  position: absolute;
+  width: 100%; 
+  height: 100%;
+} 
+
+.smallClock{
+  text-align:center;
+  margin:0px auto;
+}
+
+
+#dateclock {
+  margin:0px auto;
+}
+
+#clock-day-date {
+  left:40px;
+  color: white;
+  width: 100%;
+  margin:0 auto;
+  -webkit-user-select: none;
+  -moz-user-select:none;
+  -ms-user-select: none;
+}
+
+#clock-day-date b {
+  font-weight: normal;
+  margin:0 auto;
+}
+
+.morning{
+  background-image: url('../images/background/morning.jpg') ;
+  background-repeat:no-repeat; /* 單張固定 */
+  background-size: cover; /* auto | length | percentage | cover | contain */
+  background-position:center; /* 置中 */
+  background-attachment : fixed;/* 固定背景 */ 
+}
+.noon{
+  background-image: url('../images/background/noon.jpg') ;
+  background-repeat:no-repeat; /* 單張固定 */
+  background-size: cover; /* auto | length | percentage | cover | contain */
+  background-position:center; /* 置中 */
+  background-attachment : fixed;/* 固定背景 */ 
+}
+.afternoon{
+  background-image: url('../images/background/afternoon.jpg') ;
+  background-repeat:no-repeat; /* 單張固定 */
+  background-size: cover; /* auto | length | percentage | cover | contain */
+  background-position:center; /* 置中 */
+  background-attachment : fixed;/* 固定背景 */ 
+}
+.night{
+  background-image: url('../images/background/night.jpg') ;
+  background-repeat:no-repeat; /* 單張固定 */
+  background-size: cover; /* auto | length | percentage | cover | contain */
+  background-position:center; /* 置中 */
+  background-attachment : fixed;/* 固定背景 */ 
+}
+
+.visible {
+  display: block;
+}
+.hidden {
+  display: none;
+}
+
+/* View */
+.viewxx {
+  position: fixed;
+  top: 0;      
+  left: 0;     
+  border: 0;   
+  width: 100%; 
+  height: 100%;
+  overflow: hidden;
+}
+
+
+h1 {
+  font-size: 2.1rem;
+}
+/* View - Slide Horizontal Transition */
+.viewxx {
+  -moz-transition: -moz-transform 0.5s ease;
+  -moz-transform: translateX(100%);
+  -webkit-transition: -webkit-transform 0.5s ease;
+  -webkit-transform: translateX(100%);
+}
+#alarm-view {
+  -moz-transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+}
+#alarmdisplay:target, .viewxx:target {  
+  -moz-transition: -moz-transform 0.5s ease;
+  -moz-transform: none;
+  -webkit-transition: -webkit-transform 0.5s ease;  
+  -webkit-transform: none;
+}
+
+.circleborder {
+  border-radius: 360px;
+}
+/* 1200 x 800 */
+@media (max-width: 1300px) {
+  /*
+  canvas{
+    left:10%;
+    top:2%;
+    border: 1px solid #f00;
+    width: 400px;
+    height:400px;
+  }
+  
+  #clock-day-date {
+    top:60%;
+    left:15%;
+  }
+  
+  #worldclockdisplay {
+    display: block;
+    position: fixed;
+    left:50%;
+    width: 50%;
+    height: 50%;
+    overflow: auto;
+  }
+  */
+}
+@media (max-width: 800px) {
+  canvas{
+    width: 200px;
+  }
+  #clock-day-date {
+    font-size: 1.5rem;
+  }
+  [role="toolbar"] {
+    background: rgba(0,0,0, 0.0);
+  }
+  [role="toolbar"] ul {
+    float: right;
+  }
+}
+@media (max-width: 319px) {
+  canvas{
+    border: 1px solid #00f;
+  }
+}

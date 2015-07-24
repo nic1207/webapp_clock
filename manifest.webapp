@@ -1,0 +1,31 @@
+﻿{
+    "version": "1",
+    "name": "New Clock tablet",
+    "launch_path": "/index.html",
+    "description": "New Clock",
+    "type": "certified",
+    "icons": {
+        "16": "/images/icons/logo16.png",
+        "32": "/images/icons/logo32.png",
+        "48": "/images/icons/logo48.png",
+        "64": "/images/icons/logo64.png",
+        "128": "/images/icons/logo128.png"
+    },
+    "developer": {
+        "name": "concon",
+        "url": "http://www.google.com.tw"
+    },
+    "permissions": {
+        "systemXHR": {},
+	"geolocation": {},
+    	"alarms": {},
+    	"attention": {},
+    	"storage": {},
+    	"audio-channel-alarm": {},
+    	"settings": {
+      		"access": "readwrite"
+    	}
+    },
+    "installs_allowed_from": ["*"],
+    "default_locale": "utf-8"
+}
